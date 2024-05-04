@@ -64,6 +64,8 @@ pub struct Object {
     pub content_disposition: Option<String>,
     /// Content-Language of the object data.
     pub content_language: Option<String>,
+    /// The Custom Time of the object
+    pub custom_time: Option<chrono::DateTime<chrono::Utc>>,
     /// Cache-Control directive for the object data. If omitted, and the object is accessible to all
     /// anonymous users, the default will be public, max-age=3600.
     pub cache_control: Option<String>,
